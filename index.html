@@ -6,22 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-    <h1>Awesome books</h1>
-    <section id="books-list">
+    <div class="container">
+        <h1>Awesome books</h1>
+        <section id="books-list">
 
-    </section>
-
-    <section class="books-crud">
-        <form method="post" id="crud-form">
-            <input type="text" placeholder="Title" id="input-title" required />
-            <input type="text" placeholder="Author" id="input-author" required />
-            <input type="submit" value="Add" class="addNewBook" />
-        </form>
-    </section>
-
+        </section>
+        <section class="books-crud">
+            <div class="indicator"></div>
+            <h2>Add a new book</h2>
+            <form method="post" id="book-form">
+                <input type="text" placeholder="Title" id="input-title" class="input-form" required />
+                <input type="text" placeholder="Author" id="input-author" class="input-form" required />
+                <input type="submit" value="Add" class="addNewBook" />
+            </form>
+        </section>
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
 
