@@ -5,7 +5,8 @@
 /* stylelint-disable no-missing-end-of-source-newline */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'PT', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -15,7 +16,8 @@ body {
     background-color: white;
 }
 
-button, .addNewBook {
+button,
+.addNewBook {
     background-color: white;
     color: black;
     font-family: 'PT', sans-serif;
