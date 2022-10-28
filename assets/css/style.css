@@ -23,7 +23,7 @@ button, .addNewBook {
 }
 
 .container {
-    width: 80%;
+    width: 669px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -53,6 +53,7 @@ button, .addNewBook {
     height: 50px;
     margin-bottom: auto;
     margin-top: auto;
+    margin-right: 20px;
 }
 
 .books-crud {
