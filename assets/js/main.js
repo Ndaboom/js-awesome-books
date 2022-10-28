@@ -37,3 +37,14 @@ crudForm.addEventListener('submit', (e) => {
     inputTitle.value = "", inputAuthor.value = "";
   } 
 });
+
+function removeBook(id) {
+  const selected_book = document.getElementById("book"+id);
+  books = books.map((item) => {
+    if(item.id === id){
+      books.splice(item.id, 1);
+      selected_book.remove();
+      localStorage.setItem("books", JSON.stringify(books));
+    }
+  });
+}
