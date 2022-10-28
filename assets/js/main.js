@@ -1,3 +1,5 @@
+
+/* eslint-disable no-unused-vars */
 let books = [];
 const booksContainer = document.getElementById('books-list');
 const crudForm = document.querySelector('#crud-form');
@@ -18,33 +20,34 @@ function renderBooks() {
 }
 
 // Render books if they exist
-if(localStorage.getItem("books")) {
+if (localStorage.getItem('books')) {
   books = JSON.parse(localStorage.getItem('books'));
   renderBooks();
 }
 
 function addBook(id, title, author) {
-  books.push({id, title, author});
-  localStorage.setItem("books", JSON.stringify(books));
+  books.push({ id, title, author });
+  localStorage.setItem('books', JSON.stringify(books));
   renderBooks();
 }
 
 crudForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  if(inputTitle.value && inputAuthor.value) {
-    let currentBookId = books.length;
-    addBook(currentBookId,inputTitle.value, inputAuthor.value);
-    inputTitle.value = "", inputAuthor.value = "";
+  if (inputTitle.value && inputAuthor.value) {
+    const currentBookId = books.length;
+    addBook(currentBookId, inputTitle.value, inputAuthor.value);
+    inputTitle.value = '';
+    inputAuthor.value = '';
   } 
 });
 
 function removeBook(id) {
-  const selected_book = document.getElementById("book"+id);
+  const selectedBook = document.getElementById('book'+id);
   books = books.map((item) => {
     if(item.id === id){
       books.splice(item.id, 1);
-      selected_book.remove();
-      localStorage.setItem("books", JSON.stringify(books));
+      selectedBook.remove();
+      localStorage.setItem('books', JSON.stringify(books));
     }
   });
 }
