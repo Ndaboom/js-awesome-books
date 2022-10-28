@@ -2,6 +2,7 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable space-in-parens */
 /* eslint-disable no-trailing-spaces */
+/* eslint-disable prefer-template */
 
 let books = [];
 const booksContainer = document.getElementById('books-list');
