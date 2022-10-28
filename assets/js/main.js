@@ -1,5 +1,5 @@
-
 /* eslint-disable no-unused-vars */
+/* eslint-disable array-callback-return */
 let books = [];
 const booksContainer = document.getElementById('books-list');
 const crudForm = document.querySelector('#crud-form');
@@ -44,8 +44,8 @@ crudForm.addEventListener('submit', (e) => {
 function removeBook(id) {
   const selectedBook = document.getElementById('book'+id);
   books = books.map((item) => {
-    if(item.id === id){
-      books.splice(item.id, 1);
+    if (item.id === id) {
+      books.splice( item.id, 1);
       selectedBook.remove();
       localStorage.setItem('books', JSON.stringify(books));
     }
