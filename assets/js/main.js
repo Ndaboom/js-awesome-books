@@ -3,8 +3,9 @@
 /* eslint-disable space-in-parens */
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable prefer-template */
+/* eslint-disable class-methods-use-this */
 
-let books = JSON.parse(localStorage.getItem('books')) || [];;
+const books = JSON.parse(localStorage.getItem('books')) || [];
 const submitForm = document.querySelector('#book-form');
 const inputTitle = document.getElementById('input-title');
 const inputAuthor = document.getElementById('input-author');
@@ -22,7 +23,7 @@ class Book {
     this.render();
   }
 
-  render () {
+  render() {
     // Books list initialization
     this.listSection.innerHTML = '';
 
@@ -30,7 +31,7 @@ class Book {
       const bookContainer = document.createElement('div');
       bookContainer.className = 'book';
       const booksTitle = document.createElement('h2');
-      booksTitle.innerHTML = '"'+item.title + '" by ' + item.author;
+      booksTitle.innerHTML = '"' + item.title + '" by ' + item.author;
       bookContainer.appendChild(booksTitle);
       const removeBtn = document.createElement('button');
       removeBtn.innerHTML = 'Remove';
@@ -43,7 +44,7 @@ class Book {
     });
   }
 
-  add () {
+  add() {
     books.push(this);
     localStorage.setItem('books', JSON.stringify(books));
     window.location.reload();
