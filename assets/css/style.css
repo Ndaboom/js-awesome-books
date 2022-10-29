@@ -3,6 +3,89 @@
 /* stylelint-disable color-hex-case */
 /* stylelint-disable indentation */
 /* stylelint-disable no-missing-end-of-source-newline */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+h1,
+h2 {
+    font-family: 'PT', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
 body {
     background-color: white;
+}
+
+button,
+.addNewBook {
+    background-color: white;
+    color: black;
+    font-family: 'PT', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 669px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.container #books-list {
+    border-style: inset;
+    border-width: 0.7px;
+    border-color: black;
+}
+
+.book {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.book h2 {
+    margin-right: 50px;
+}
+
+.remove_button {
+    height: 50px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 20px;
+}
+
+.books-crud {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.indicator {
+    margin: 20px auto;
+    background-color: black;
+    border-radius: 24px;
+    width: 120px;
+    height: 4px;
+}
+
+#book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-form {
+    padding: 10px;
+    border-style: inset;
+    border-width: 0.7px;
+    border-color: black;
+}
+
+#book-form .addNewBook {
+    width: 20%;
+    height: 45px;
+    justify-content: right !important;
 }
