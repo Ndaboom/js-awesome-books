@@ -15,12 +15,12 @@ function manageScreens(i) {
   screensArr.forEach((option) => {
     option.classList.add('hidden');
   });
-  if(i === 0){
+  if (i === 0) {
     homeTitle.classList.remove('hidden');
   } else {
     homeTitle.classList.add('hidden');
   }
-  screensArr[i].classList.remove('hidden');   
+  screensArr[i].classList.remove('hidden');
 }
 
 // Add click listener to menu options
