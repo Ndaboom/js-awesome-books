@@ -43,8 +43,9 @@ class Book {
     window.location.reload();
   }
 
-  remove(bookId) {
-    const updatedList = books.filter((item) => item.id !== bookId);
+  remove(id) {
+    this.id = id;
+    const updatedList = books.filter((item) => item.id !== this.id);
     localStorage.setItem('books', JSON.stringify(updatedList));
     window.location.reload();
   }
