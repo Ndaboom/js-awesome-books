@@ -6,7 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
 h1,
-h2 {
+h2,
+p,
+li {
     font-family: 'PT', sans-serif;
     font-style: normal;
     font-weight: 700;

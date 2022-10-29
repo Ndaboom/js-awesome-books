@@ -12,7 +12,6 @@ function removeActive() {
 }
 
 function manageScreens(i) {
-  console.log("Current element index", i);
   screensArr.forEach((option) => {
     option.classList.add('hidden');
   });
