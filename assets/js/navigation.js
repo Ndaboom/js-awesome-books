@@ -25,7 +25,7 @@ function manageScreens(i) {
 
 // Add click listener to menu options
 optionsMenu.forEach((option, index) => {
-  option.addEventListener('click', (e) => {
+  option.addEventListener('click', () => {
     removeActive();
     manageScreens(index);
     option.classList.add('blue');
