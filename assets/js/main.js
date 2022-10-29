@@ -24,7 +24,7 @@ class Book {
       const bookContainer = document.createElement('div');
       bookContainer.className = 'book';
       const booksTitle = document.createElement('h2');
-      booksTitle.innerHTML = ['"', item.title, '" by ', item.author].join();
+      booksTitle.innerHTML = ['"', item.title, '" by ', item.author].join('');
       bookContainer.appendChild(booksTitle);
       const removeBtn = document.createElement('button');
       removeBtn.innerHTML = 'Remove';
@@ -50,7 +50,7 @@ class Book {
   }
 }
 
-const book = new Book();
+let book = new Book();
 
 submitForm.addEventListener('submit', (e) => {
   e.preventDefault();
