@@ -1,10 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable array-callback-return */
-/* eslint-disable space-in-parens */
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable prefer-template */
-/* eslint-disable class-methods-use-this */
-
 const books = JSON.parse(localStorage.getItem('books')) || [];
 const submitForm = document.querySelector('#book-form');
 const inputTitle = document.getElementById('input-title');
