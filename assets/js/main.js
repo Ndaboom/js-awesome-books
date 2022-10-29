@@ -24,7 +24,7 @@ class Book {
       const bookContainer = document.createElement('div');
       bookContainer.className = 'book';
       const booksTitle = document.createElement('h2');
-      booksTitle.innerHTML = '"' + item.title + '" by ' + item.author;
+      booksTitle.innerHTML = ['"', item.title, '" by ', item.author].join();
       bookContainer.appendChild(booksTitle);
       const removeBtn = document.createElement('button');
       removeBtn.innerHTML = 'Remove';
@@ -43,8 +43,8 @@ class Book {
     window.location.reload();
   }
 
-  remove(id) {
-    const updatedList = books.filter((item) => item.id !== id);
+  remove(bookId) {
+    const updatedList = books.filter((item) => item.id !== bookId);
     localStorage.setItem('books', JSON.stringify(updatedList));
     window.location.reload();
   }
@@ -56,7 +56,7 @@ submitForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (inputTitle.value && inputAuthor.value) {
     currentBookId += 1;
-    const book = new Book(currentBookId, inputTitle.value, inputAuthor.value);
+    book = new Book(currentBookId, inputTitle.value, inputAuthor.value);
     book.add();
   }
 });
