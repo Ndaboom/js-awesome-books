@@ -65,7 +65,5 @@ submitForm.addEventListener('submit', (e) => {
     currentBookId += 1;
     const book = new Book(currentBookId, inputTitle.value, inputAuthor.value);
     book.add();
-    inputTitle.value = '';
-    inputAuthor.value = '';
   }
 });
