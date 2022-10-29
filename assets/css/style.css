@@ -133,3 +133,9 @@ section h2 {
     height: 45px;
     justify-content: right !important;
 }
+
+.footer-section {
+    padding: 50px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
