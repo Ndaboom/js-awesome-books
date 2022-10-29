@@ -42,11 +42,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@ndabosammy](https://twitter.com/ndabosammy)
 - LinkedIn: [Sam Ndabo](https://linkedin.com/in/sam-ndabo-b0431b17b)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+ 👤 **Linus Shaddai**
+
+- GitHub: [@Linushaddai99](https://github.com/Linushaddai99)
+- Twitter: [@ShaddaiLinus](https://twitter.com/ShaddaiLinus)
+- LinkedIn: [@ShaddaiLinus](https://www.linkedin.com/in/linusshaddai/)
 
 ## 🤝 Contributing
 
